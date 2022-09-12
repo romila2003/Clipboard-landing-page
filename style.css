@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  height: 100vh;
+  text-align: center;
+  line-height: 1.5em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+@media (min-width: 830px) {
+  body {
+    background-image: url("/images/bg-header-desktop.png");
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5em 1.3em;
+  overflow-x: hidden;
+}
+@media (min-width: 830px) {
+  header {
+    margin-top: 2em;
+  }
+}
+header .logo {
+  max-width: 6.25em;
+}
+header .text-content {
+  max-width: 625px;
+}
+header .text-content h1 {
+  margin: 1em 0;
+  font-size: 2rem;
+}
+@media (min-width: 830px) {
+  header .text-content h1 {
+    font-size: 2.7rem;
+  }
+}
+header .text-content p {
+  margin-top: 0.8em;
+}
+header .text-content {
+  padding: 1em;
+  max-width: 44.375em;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+@media (min-width: 830px) {
+  .btns {
+    flex-direction: row;
+  }
+}
+.btns button {
+  width: 15.625em;
+  border-radius: 25px;
+  padding: 1em 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+@media (min-width: 830px) {
+  .btns button {
+    margin: 0 1em;
+  }
+}
+.btns .ios {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0 3px 0 hsl(171deg, 53%, 40%);
+  margin: 1em 0;
+}
+.btns .ios:hover {
+  background-color: hsla(171deg, 66%, 44%, 0.7);
+  box-shadow: 5px 5px 20px hsl(171deg, 53%, 40%);
+}
+.btns .mac {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0 3px 0 hsl(233deg, 36%, 52%);
+}
+.btns .mac:hover {
+  background-color: hsla(233deg, 100%, 69%, 0.7);
+  box-shadow: 5px 5px 20px hsl(233deg, 36%, 52%);
+}
+
+.text-content {
+  text-align: center;
+}
+.text-content h1, .text-content h2 {
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.text-content p {
+  font-size: 1rem;
+  color: hsl(201deg, 11%, 66%);
+  font-weight: 400;
+}
+
+section:not(.snippets) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 830px) {
+  .snippets .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 830px) {
+  .snippets .flex .img-holder {
+    position: relative;
+    left: -5%;
+    clip-path: inset(0 0 0 5%);
+  }
+}
+.snippets .flex .img-holder img {
+  position: relative;
+  left: 0;
+  margin-top: 2em;
+  width: 80%;
+  max-width: 25em;
+}
+@media (min-width: 830px) {
+  .snippets .flex .img-holder img {
+    width: 100%;
+    max-width: 40.625em;
+  }
+}
+.snippets .flex .text {
+  padding: 2em 1.3em;
+  position: relative;
+}
+@media (min-width: 830px) {
+  .snippets .flex .text {
+    text-align: left;
+    max-width: 43.75;
+  }
+}
+@media (min-width: 1000px) {
+  .snippets .flex .text {
+    margin-top: -5em;
+  }
+}
+@media (min-width: 1600px) {
+  .snippets .flex .text {
+    right: 15%;
+  }
+}
+.snippets .flex .text h3 {
+  color: hsl(210deg, 10%, 33%);
+  margin-top: 1em;
+  font-size: 1.3rem;
+}
+.snippets .flex .text p {
+  color: hsl(201deg, 11%, 66%);
+  margin-top: 0.5em;
+}
+
+.section {
+  padding: 3em 1.5em 2em 1.5em;
+}
+@media (min-width: 830px) {
+  .section .text-content {
+    max-width: 40.625em;
+  }
+}
+.section h2 {
+  font-size: 1.6rem;
+}
+.section img {
+  width: 100%;
+  max-width: 25em;
+  margin-top: 2em;
+}
+@media (min-width: 830px) {
+  .section img {
+    margin-top: 3em;
+    max-width: 43.75em;
+  }
+}
+
+.features {
+  padding: 1em 0;
+  margin: 0 0.7em;
+}
+.features .text-content {
+  padding: 0 1em;
+}
+.features ul {
+  list-style: none;
+  padding: 3em 0.2em 0 0.2em;
+}
+@media (min-width: 1000px) {
+  .features ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .features ul li {
+    max-width: 25em;
+  }
+  .features ul li:not(:first-of-type) {
+    margin-left: 2em;
+  }
+}
+.features ul h3 {
+  color: hsl(210deg, 10%, 33%);
+  margin-top: 1em;
+}
+.features ul p {
+  color: hsl(201deg, 11%, 66%);
+  margin: 1em 0 2em 0;
+}
+
+.companies ul {
+  list-style: none;
+}
+@media (min-width: 1000px) {
+  .companies ul {
+    display: flex;
+  }
+}
+.companies ul li {
+  margin: 3em 0;
+}
+@media (min-width: 1000px) {
+  .companies ul li:not(:first-of-type) {
+    margin-left: 3em;
+  }
+}
+@media (min-width: 1200px) {
+  .companies ul li:not(:first-of-type) {
+    margin-left: 5em;
+  }
+}
+
+.bottom {
+  padding: 2em 1.9em;
+}
+@media (min-width: 830px) {
+  .bottom {
+    padding: 4em 0;
+  }
+  .bottom p {
+    max-width: 39.6875em;
+  }
+}
+@media (min-width: 830px) {
+  .bottom .btns {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: hsl(220deg, 18%, 97%);
+}
+@media (min-width: 830px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1.5em 0;
+    position: relative;
+  }
+}
+footer .logo {
+  width: 100;
+  max-width: 3.75em;
+  margin: 2em 0 1em 0;
+}
+@media (min-width: 830px) {
+  footer .logo {
+    margin-left: 10%;
+    margin-top: 1em;
+  }
+}
+footer ul {
+  list-style: none;
+}
+@media (min-width: 830px) {
+  footer .links {
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 400px;
+  }
+}
+@media (min-width: 830px) {
+  footer .links .two {
+    grid-row: 2;
+  }
+  footer .links .three {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  footer .links .four {
+    grid-row: 2;
+  }
+  footer .links .five {
+    margin-left: 2em;
+  }
+}
+footer .links li {
+  margin-top: 0.5em;
+}
+footer .links li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+footer .links li a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+footer .media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (min-width: 830px) {
+  footer .media {
+    margin-right: 50%;
+  }
+}
+footer .media li {
+  margin: 2em 1em;
+}
+footer .media .icon:hover {
+  filter: invert(57%) sepia(82%) saturate(387%) hue-rotate(121deg) brightness(92%) contrast(88%);
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+@media (min-width: 830px) {
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+.attribution a:hover {
+  color: hsl(233deg, 100%, 69%);
+}
+
+/*# sourceMappingURL=style.css.map */

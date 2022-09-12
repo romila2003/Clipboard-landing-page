@@ -1,0 +1,113 @@
+@use "utilities/variables" as *;
+
+footer {
+    @media (min-width: 830px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 0 1.5em 0;
+        position: relative;
+    }
+    
+
+    .logo {
+        width: 100;
+        max-width: 3.75em;
+        margin: 2em 0 1em 0;
+
+        @media (min-width: 830px) {
+            margin-left: 10%;
+            margin-top: 1em;
+        }
+    }
+
+    background-color: $grayish-blue-light;
+
+    ul {
+        list-style: none;        
+    }
+
+    .links {
+        @media (min-width: 830px) {
+            display: grid;
+            text-align: left;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            max-width: 400px;
+        }
+
+        @media (min-width: 830px) {
+            .two {
+                grid-row: 2;
+            }
+
+            .three {
+                grid-column: 2;
+                grid-row: 1;
+            }
+            
+            .four {
+                grid-row: 2;
+            }
+
+            .five {
+                margin-left: 2em;
+            }
+        }
+        
+        li {
+            margin-top: 0.5em;
+
+            a {
+               font-size: 1rem;
+               text-decoration: none; 
+               color: $dark-grayish-blue;
+
+               &:hover {
+                color: $strong-cyan;
+               }
+            }
+            
+        }
+    }
+
+    .media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+         @media (min-width: 830px) {
+                margin-right: 50%;
+            }
+
+        li {
+            margin: 2em 1em;           
+        }
+
+        .icon:hover {
+            filter: invert(57%) sepia(82%) saturate(387%) hue-rotate(121deg) brightness(92%) contrast(88%);
+        }
+    }
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center; 
+
+    @media (min-width: 830px) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+
+    &:hover {
+        color: $light-blue;
+
+    }
+}

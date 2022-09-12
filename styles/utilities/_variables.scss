@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+$strong-cyan: hsl(171, 66%, 44%);
+$strong-cyan-op: hsla(171, 66%, 44%, 70%);
+$strong-cyan-border: hsl(171, 53%, 40%);
+$light-blue: hsl(233, 100%, 69%);
+$light-blue-op: hsla(233, 100%, 69%, 70%);
+$light-blue-border: hsl(233, 36%, 52%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+$grayish-blue-light: hsla(220, 18%, 97%, 1);
+;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
