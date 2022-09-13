@@ -29,16 +29,16 @@ Users should be able to:
 
 # Mobile Preview
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Clipboard-landing-page/blob/main/mobile%20preview.PNG)
 
 # Desktop Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Clipboard-landing-page/blob/main/desktop%20preview.PNG)
 
 ### Links
 
- - Source code: []()
- - Live website: []()
+ - Source code: [https://github.com/romila2003/Clipboard-landing-page](https://github.com/romila2003/Clipboard-landing-page)
+ - Live website: [https://romila-clipboard-landing-page.netlify.app/](https://romila-clipboard-landing-page.netlify.app/)
 
 ## My process
 
