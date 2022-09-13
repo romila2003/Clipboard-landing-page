@@ -26,11 +26,15 @@ header {
     overflow-x: hidden;
 
     @media (min-width: 830px) {
-        margin-top: 2em;
+        margin-top: 5em;
     }
 
     .logo {
         max-width: 6.25em;
+
+        @media (min-width: 830px) {
+            max-width: 7em;
+        }
     }
 
     .text-content {
@@ -46,6 +50,10 @@ header {
 
         p {
             margin-top: 0.8em;
+
+            @media (min-width: 830px) {
+                font-size: 1.1rem;
+            }
         }
     }   
     
@@ -78,6 +86,7 @@ header {
 
         @media (min-width: 830px) {
             margin: 0 1em;
+            font-size: 1rem;
         }
 
     }
