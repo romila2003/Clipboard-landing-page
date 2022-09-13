@@ -1,6 +1,6 @@
 @use "utilities/variables" as *;
 
-section:not(.snippets) {
+section:not(.snippets), aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
