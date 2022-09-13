@@ -118,7 +118,7 @@ header .text-content {
   font-weight: 400;
 }
 
-section:not(.snippets) {
+section:not(.snippets), aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
