@@ -33,11 +33,16 @@ header {
 }
 @media (min-width: 830px) {
   header {
-    margin-top: 2em;
+    margin-top: 5em;
   }
 }
 header .logo {
   max-width: 6.25em;
+}
+@media (min-width: 830px) {
+  header .logo {
+    max-width: 7em;
+  }
 }
 header .text-content {
   max-width: 625px;
@@ -53,6 +58,11 @@ header .text-content h1 {
 }
 header .text-content p {
   margin-top: 0.8em;
+}
+@media (min-width: 830px) {
+  header .text-content p {
+    font-size: 1.1rem;
+  }
 }
 header .text-content {
   padding: 1em;
@@ -84,6 +94,7 @@ header .text-content {
 @media (min-width: 830px) {
   .btns button {
     margin: 0 1em;
+    font-size: 1rem;
   }
 }
 .btns .ios {
@@ -118,7 +129,7 @@ header .text-content {
   font-weight: 400;
 }
 
-section:not(.snippets), aside {
+section:not(.snippets) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,7 +160,7 @@ section:not(.snippets), aside {
 @media (min-width: 830px) {
   .snippets .flex .img-holder img {
     width: 100%;
-    max-width: 40.625em;
+    max-width: 42em;
   }
 }
 .snippets .flex .text {
@@ -201,7 +212,7 @@ section:not(.snippets), aside {
 @media (min-width: 830px) {
   .section img {
     margin-top: 3em;
-    max-width: 43.75em;
+    max-width: 47em;
   }
 }
 
